@@ -1,0 +1,403 @@
+v 20130925 2
+C 20900 58700 1 0 0 74165-1.sym
+{
+T 21200 63840 5 10 1 1 0 0 1
+device=74HC165
+T 21200 63840 5 10 0 0 0 0 1
+footprint=TSSOP16
+T 22600 63700 5 10 1 1 0 6 1
+refdes=U1
+}
+C 19500 63200 1 0 0 input-long-1.sym
+{
+T 19500 63450 5 10 0 0 0 0 1
+net=P0:1
+T 20100 63900 5 10 0 0 0 0 1
+device=none
+T 20600 63300 5 10 1 1 0 7 1
+value=P0
+}
+C 19500 62800 1 0 0 input-long-1.sym
+{
+T 19500 63050 5 10 0 0 0 0 1
+net=P1:1
+T 20100 63500 5 10 0 0 0 0 1
+device=none
+T 20600 62900 5 10 1 1 0 7 1
+value=P1
+}
+C 19500 62400 1 0 0 input-long-1.sym
+{
+T 20100 63100 5 10 0 0 0 0 1
+device=none
+T 19500 62650 5 10 0 0 0 0 1
+net=P2:1
+T 20600 62500 5 10 1 1 0 7 1
+value=P2
+}
+C 19500 62000 1 0 0 input-long-1.sym
+{
+T 20100 62700 5 10 0 0 0 0 1
+device=none
+T 19500 62250 5 10 0 0 0 0 1
+net=P3:1
+T 20600 62100 5 10 1 1 0 7 1
+value=P3
+}
+C 19500 61600 1 0 0 input-long-1.sym
+{
+T 20100 62300 5 10 0 0 0 0 1
+device=none
+T 19500 61850 5 10 0 0 0 0 1
+net=P4:1
+T 20600 61700 5 10 1 1 0 7 1
+value=P4
+}
+C 19500 61200 1 0 0 input-long-1.sym
+{
+T 20100 61900 5 10 0 0 0 0 1
+device=none
+T 19500 61450 5 10 0 0 0 0 1
+net=P5:1
+T 20600 61300 5 10 1 1 0 7 1
+value=P5
+}
+C 19500 60800 1 0 0 input-long-1.sym
+{
+T 20100 61500 5 10 0 0 0 0 1
+device=none
+T 19500 61050 5 10 0 0 0 0 1
+net=P6:1
+T 20600 60900 5 10 1 1 0 7 1
+value=P6
+}
+C 19500 60400 1 0 0 input-long-1.sym
+{
+T 20100 61100 5 10 0 0 0 0 1
+device=none
+T 19500 60650 5 10 0 0 0 0 1
+net=P7:1
+T 20600 60500 5 10 1 1 0 7 1
+value=P7
+}
+C 22600 65500 1 0 1 connector5-1.sym
+{
+T 20800 67000 5 10 0 0 0 6 1
+device=CONNECTOR_5
+T 22500 67200 5 10 1 1 0 6 1
+refdes=CONN2
+T 22600 65500 5 10 0 0 0 0 1
+footprint=JUMPER5
+}
+C 15800 65500 1 0 0 connector5-1.sym
+{
+T 17600 67000 5 10 0 0 0 0 1
+device=CONNECTOR_5
+T 15900 67200 5 10 1 1 0 0 1
+refdes=CONN1
+T 15800 65500 5 10 0 0 0 6 1
+footprint=JUMPER5
+}
+C 20900 66800 1 0 1 output-long-1.sym
+{
+T 20700 67050 5 10 0 0 0 6 1
+net=SERIN:1
+T 20700 67500 5 10 0 0 0 6 1
+device=none
+T 20600 66900 5 10 1 1 0 7 1
+value=SERIN
+}
+C 18900 66800 1 0 1 input-long-1.sym
+{
+T 18900 67050 5 10 0 0 0 6 1
+net=SEROUT:1
+T 18300 67500 5 10 0 0 0 6 1
+device=none
+T 17800 66900 5 10 1 1 0 1 1
+value=SEROUT
+}
+C 19500 66200 1 0 0 input-long-1.sym
+{
+T 19500 66450 5 10 0 0 0 0 1
+net=CLOCK:1
+T 20100 66900 5 10 0 0 0 0 1
+device=none
+T 20600 66300 5 10 1 1 0 7 1
+value=CLOCK
+}
+C 17500 66200 1 0 0 output-long-1.sym
+{
+T 17700 66450 5 10 0 0 0 0 1
+net=CLOCK:1
+T 17700 66900 5 10 0 0 0 0 1
+device=none
+T 17800 66300 5 10 1 1 0 1 1
+value=CLOCK
+}
+C 17500 65600 1 0 0 output-long-1.sym
+{
+T 17700 65850 5 10 0 0 0 0 1
+net=LATCH:1
+T 17700 66300 5 10 0 0 0 0 1
+device=none
+T 17800 65700 5 10 1 1 0 1 1
+value=LATCH
+}
+C 19500 65600 1 0 0 input-long-1.sym
+{
+T 19500 65850 5 10 0 0 0 0 1
+net=LATCH:1
+T 20100 66300 5 10 0 0 0 0 1
+device=none
+T 20600 65700 5 10 1 1 0 7 1
+value=LATCH
+}
+C 19000 67300 1 0 0 vcc-1.sym
+N 19200 67300 19200 66600 4
+C 19100 65100 1 0 0 gnd-1.sym
+N 19200 65400 19200 66000 4
+C 22900 63200 1 0 0 output-long-1.sym
+{
+T 23100 63450 5 10 0 0 0 0 1
+net=SEROUT:1
+T 23100 63900 5 10 0 0 0 0 1
+device=none
+T 23200 63300 5 10 1 1 0 1 1
+value=SEROUT
+}
+N 17500 66600 20900 66600 4
+N 17500 66000 20900 66000 4
+T 15800 65200 9 10 1 0 0 0 1
+Host connection
+T 22600 65200 9 10 1 0 0 6 1
+Guest connection
+C 19500 60000 1 0 0 input-long-1.sym
+{
+T 19500 60250 5 10 0 0 0 0 1
+net=LATCH:1
+T 20100 60700 5 10 0 0 0 0 1
+device=none
+T 20600 60100 5 10 1 1 0 7 1
+value=LATCH
+}
+C 19500 59200 1 0 0 input-long-1.sym
+{
+T 19500 59450 5 10 0 0 0 0 1
+net=CLOCK:1
+T 20100 59900 5 10 0 0 0 0 1
+device=none
+T 20600 59300 5 10 1 1 0 7 1
+value=CLOCK
+}
+C 20800 58600 1 0 0 gnd-1.sym
+C 19500 59600 1 0 0 input-long-1.sym
+{
+T 19500 59850 5 10 0 0 0 0 1
+net=SERIN:1
+T 20100 60300 5 10 0 0 0 0 1
+device=none
+T 20600 59700 5 10 1 1 0 7 1
+value=SERIN
+}
+C 15800 58000 1 0 0 connector10-1.sym
+{
+T 17700 61000 5 10 0 0 0 0 1
+device=CONNECTOR_10
+T 15800 58000 5 10 0 0 0 0 1
+footprint=Box_header_100mil_notch_5x2
+T 15900 61200 5 10 1 1 0 0 1
+refdes=CONN3
+}
+C 17500 60800 1 0 0 output-long-1.sym
+{
+T 17700 61050 5 10 0 0 0 0 1
+net=P0:1
+T 17700 61500 5 10 0 0 0 0 1
+device=none
+T 17800 60900 5 10 1 1 0 1 1
+value=P0
+}
+C 17500 60500 1 0 0 output-long-1.sym
+{
+T 17700 61200 5 10 0 0 0 0 1
+device=none
+T 17700 60750 5 10 0 0 0 0 1
+net=P1:1
+T 17800 60600 5 10 1 1 0 1 1
+value=P1
+}
+C 17500 60200 1 0 0 output-long-1.sym
+{
+T 17700 60900 5 10 0 0 0 0 1
+device=none
+T 17700 60450 5 10 0 0 0 0 1
+net=P2:1
+T 17800 60300 5 10 1 1 0 1 1
+value=P2
+}
+C 17500 59900 1 0 0 output-long-1.sym
+{
+T 17700 60600 5 10 0 0 0 0 1
+device=none
+T 17700 60150 5 10 0 0 0 0 1
+net=P3:1
+T 17800 60000 5 10 1 1 0 1 1
+value=P3
+}
+C 17500 59600 1 0 0 output-long-1.sym
+{
+T 17700 60300 5 10 0 0 0 0 1
+device=none
+T 17700 59850 5 10 0 0 0 0 1
+net=P4:1
+T 17800 59700 5 10 1 1 0 1 1
+value=P4
+}
+C 17500 59300 1 0 0 output-long-1.sym
+{
+T 17700 60000 5 10 0 0 0 0 1
+device=none
+T 17700 59550 5 10 0 0 0 0 1
+net=P5:1
+T 17800 59400 5 10 1 1 0 1 1
+value=P5
+}
+C 17500 59000 1 0 0 output-long-1.sym
+{
+T 17700 59700 5 10 0 0 0 0 1
+device=none
+T 17700 59250 5 10 0 0 0 0 1
+net=P6:1
+T 17800 59100 5 10 1 1 0 1 1
+value=P6
+}
+C 17500 58700 1 0 0 output-long-1.sym
+{
+T 17700 59400 5 10 0 0 0 0 1
+device=none
+T 17700 58950 5 10 0 0 0 0 1
+net=P7:1
+T 17800 58800 5 10 1 1 0 1 1
+value=P7
+}
+C 17400 57900 1 0 0 gnd-1.sym
+C 17500 58700 1 270 0 vcc-1.sym
+C 16100 63000 1 0 0 resistor-4pack-isolated-600mil-1.sym
+{
+T 16400 63500 5 10 0 0 0 0 1
+device=RESISTORPACK_4
+T 16072 63050 5 10 0 0 0 0 1
+footprint=CTS_742X_08
+T 16200 64200 5 10 1 1 0 0 1
+refdes=RN1
+T 16200 64000 5 10 1 1 0 0 1
+value=10K
+}
+C 16100 61600 1 0 0 resistor-4pack-isolated-600mil-1.sym
+{
+T 16400 62100 5 10 0 0 0 0 1
+device=RESISTORPACK_4
+T 16072 61650 5 10 0 0 0 0 1
+footprint=CTS_742X_08
+T 16200 62800 5 10 1 1 0 0 1
+refdes=RN2
+T 16200 62600 5 10 1 1 0 0 1
+value=10K
+}
+C 15600 64200 1 0 0 vcc-1.sym
+N 15800 64200 15800 61800 4
+N 15800 61800 16100 61800 4
+N 16100 62000 15800 62000 4
+N 16100 62200 15800 62200 4
+N 16100 62400 15800 62400 4
+N 16100 63200 15800 63200 4
+N 16100 63400 15800 63400 4
+N 16100 63600 15800 63600 4
+N 16100 63800 15800 63800 4
+C 16700 63100 1 0 0 io-long-1.sym
+{
+T 16900 63350 5 10 0 0 0 0 1
+net=P0:1
+T 16900 63700 5 10 0 0 0 0 1
+device=none
+T 17000 63200 5 10 1 1 0 1 1
+value=P0
+}
+C 16700 63300 1 0 0 io-long-1.sym
+{
+T 16900 63550 5 10 0 0 0 0 1
+net=P1:1
+T 16900 63900 5 10 0 0 0 0 1
+device=none
+T 17000 63400 5 10 1 1 0 1 1
+value=P1
+}
+C 16700 63500 1 0 0 io-long-1.sym
+{
+T 16900 63750 5 10 0 0 0 0 1
+net=P2:1
+T 16900 64100 5 10 0 0 0 0 1
+device=none
+T 17000 63600 5 10 1 1 0 1 1
+value=P2
+}
+C 16700 63700 1 0 0 io-long-1.sym
+{
+T 16900 63950 5 10 0 0 0 0 1
+net=P3:1
+T 16900 64300 5 10 0 0 0 0 1
+device=none
+T 17000 63800 5 10 1 1 0 1 1
+value=P3
+}
+C 16700 61700 1 0 0 io-long-1.sym
+{
+T 16900 61950 5 10 0 0 0 0 1
+net=P4:1
+T 16900 62300 5 10 0 0 0 0 1
+device=none
+T 17000 61800 5 10 1 1 0 1 1
+value=P4
+}
+C 16700 61900 1 0 0 io-long-1.sym
+{
+T 16900 62150 5 10 0 0 0 0 1
+net=P5:1
+T 16900 62500 5 10 0 0 0 0 1
+device=none
+T 17000 62000 5 10 1 1 0 1 1
+value=P5
+}
+C 16700 62100 1 0 0 io-long-1.sym
+{
+T 16900 62350 5 10 0 0 0 0 1
+net=P6:1
+T 16900 62700 5 10 0 0 0 0 1
+device=none
+T 17000 62200 5 10 1 1 0 1 1
+value=P6
+}
+C 16700 62300 1 0 0 io-long-1.sym
+{
+T 16900 62550 5 10 0 0 0 0 1
+net=P7:1
+T 16900 62900 5 10 0 0 0 0 1
+device=none
+T 17000 62400 5 10 1 1 0 1 1
+value=P7
+}
+C 23400 61400 1 0 0 vcc-1.sym
+C 23500 60500 1 0 0 gnd-1.sym
+C 23400 61400 1 270 0 capacitor-600mil-1.sym
+{
+T 24200 61200 5 10 0 0 270 0 1
+device=CAPACITOR
+T 23800 61100 5 10 1 1 0 0 1
+refdes=C1
+T 23800 60900 5 10 1 1 0 0 1
+value=0.1µF
+T 24400 61200 5 10 0 0 270 0 1
+symversion=0.1
+T 23400 61400 5 10 0 0 0 0 1
+footprint=0603
+}
