@@ -18,9 +18,9 @@ Features
 *   10-pin boxed header provides connection to all 8 input pins, plus
     supply and ground.
 *   The host-side 5-pin header provides power and serial input to the
-    board, while the compatible guest-side 5-pin header provides serial
-    output to the host-side header of another breakout (or to another
-    74HC165-based or similar assembly).
+    board, while the compatible guest-side 5-pin header provides power
+    and serial output to the host-side header of another breakout (or to
+    another 74HC165-based or similar assembly).
 *   Pre-fab and some-assembly-required options for cables for the header
     connectors are readily available.
 
