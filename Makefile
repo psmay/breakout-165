@@ -50,15 +50,20 @@ $(BUILD)/layout.ps: $(PROJECT).pcb | $(BUILD)
 $(BUILD)/layout.pdf: $(BUILD)/layout.ps | $(BUILD)
 	ps2pdf $^ $@
 
-$(BUILD)/layout-top.eps: $(PROJECT).pcb | $(BUILD)
-	pcb -x eps --layer-stack "outline,top,silk" --layer-color-1 '#000088' --element-color '#FFFFFF' --as-shown --eps-file $@ $^
+$(BUILD)/layout-top-nooutline.eps: $(PROJECT).pcb | $(BUILD)
+	pcb -x eps --layer-stack "top,silk" --layer-color-1 '#000088' --element-color '#FFFFFF' --as-shown --eps-file $@ $^
 
-$(BUILD)/layout-bottom.eps: $(PROJECT).pcb | $(BUILD)
-	pcb -x eps --layer-stack "outline,bottom,silk,solderside" --layer-color-2 '#000088' --element-color '#FFFFFF' --as-shown --eps-file $@ $^
+$(BUILD)/layout-top-outlineonly.eps: $(PROJECT).pcb | $(BUILD)
+	pcb -x eps --layer-stack "outline" --layer-color-7 '#FF8800' --as-shown --eps-file $@ $^
 
-$(BUILD)/layout-top.png: $(BUILD)/layout-top.eps | $(BUILD)
-	convert -density 600x600 $^ -background '#4444ff' -flatten $@
+$(BUILD)/layout-top.png: $(BUILD)/layout-top-nooutline.eps $(BUILD)/layout-top-outlineonly.eps | $(BUILD)
+	./combine-eps-with-outline-eps.sh $^ $@
 
-$(BUILD)/layout-bottom.png: $(BUILD)/layout-bottom.eps | $(BUILD)
-	convert -density 600x600 $^ -background '#4444ff' -flatten $@
+$(BUILD)/layout-bottom-nooutline.eps: $(PROJECT).pcb | $(BUILD)
+	pcb -x eps --layer-stack "bottom,silk,solderside" --layer-color-2 '#000088' --element-color '#FFFFFF' --as-shown --eps-file $@ $^
 
+$(BUILD)/layout-bottom-outlineonly.eps: $(PROJECT).pcb | $(BUILD)
+	pcb -x eps --layer-stack "outline,solderside" --layer-color-7 '#FF8800' --as-shown --eps-file $@ $^
+
+$(BUILD)/layout-bottom.png: $(BUILD)/layout-bottom-nooutline.eps $(BUILD)/layout-bottom-outlineonly.eps | $(BUILD)
+	./combine-eps-with-outline-eps.sh $^ $@
