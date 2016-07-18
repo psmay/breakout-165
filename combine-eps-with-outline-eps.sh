@@ -11,12 +11,13 @@ convert \
 	-background "$BG" \
 	-density "$DENSITY" "$EPS1" -flatten \
 	-density "$DENSITY" "$EPS2" -flatten \
-	-bordercolor "$BG" -border 1x1 \
+	-bordercolor "$BG" \
 	"$WORK/tmp.png" &&
 convert \
 	"$WORK/tmp.png" \
 	-bordercolor "$BG" \
 	-trim \
+	-border 5x5 \
 	"$PNGOUT"
 
 rm -rf "$WORK"
